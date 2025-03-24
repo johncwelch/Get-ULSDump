@@ -18,3 +18,5 @@ into a series of TSV files, one per subsystem. This allows you to import it into
   ##Why  
 
 I find myself having to figure out what to extract as log files from the macOS ULS, and there's not a great list of things out there. So I built this for myself, and realized it may be useful as a starting point for others.
+
+It's fairly thoroughly commented, so you should be able to figure out what's going on.  
