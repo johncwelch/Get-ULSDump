@@ -1,6 +1,7 @@
 #make a list of subsystems
+$myUserName = whoami
 $theSubsystemListPath = Get-ChildItem -Path "/System/Library/Preferences/Logging/Subsystems"
-$theFileStoragePath = "/Users/jwelch/Desktop/securityLogs/"
+$theFileStoragePath = "/Users/$myUserName/Desktop/securityLogs/"
 $subsystemList = [System.Collections.Generic.List[string]]::new()
 foreach ($item in $theSubsystemListPath) {                                                  
 	$subsystemList.Add($item.Name.Substring(0, ($item.Name.Length - 6)))
